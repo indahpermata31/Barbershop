@@ -117,7 +117,7 @@
 						<div class="dropdown-menu dropdown-menu-right profile-notification">
 							<div class="pro-head">
 								<img src="../assets/images/user/hermione1.jpg" class="img-radius" alt="User-Profile-Image">
-								<span>Hermione Granger</span>
+								<span>Logout</span>
 								<a href="/login" class="dud-logout" title="Logout">
 									<i class="feather icon-log-out"></i>
 								</a>
