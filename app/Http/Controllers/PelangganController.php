@@ -34,6 +34,7 @@ class PelangganController extends Controller
             'nama' => $request->nama,
             'no_telepon' => $request->no_telepon,
             'gender' => $request->gender,
+            'email' => $request->email,
         ]);
 
         return redirect()->route('pelanggan.index')->with('success', 'Transaksi Berhasil!');

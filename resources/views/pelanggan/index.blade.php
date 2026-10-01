@@ -12,6 +12,7 @@
                 <th>Nama Pelanggan</th>
                 <th>No Telepone</th>
                 <th>Gender</th>
+                <th>Email</th>
                 <th>Aksi</th>
             </tr>
 
@@ -21,6 +22,7 @@
                 <td>{{ $pelanggan->nama }}</td>
                 <td>{{ $pelanggan->no_telepon }}</td>
                 <td>{{ $pelanggan->gender }}</td>
+                <td>{{ $pelanggan->email }}</td>
                 <td>
                     <a href="{{ route('pelanggan.edit', $pelanggan->id) }}"
                     class="btn btn-warning">Edit</a>

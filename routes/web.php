@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\StylistController;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\LayananController;
@@ -17,6 +18,9 @@ Route::middleware('ceklogin')->group(function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+//search
+Route::get('/search', [SearchController::class, 'index'])->name('search');
 
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 

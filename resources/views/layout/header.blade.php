@@ -28,7 +28,24 @@
 						</div>
 					</div>
 				</li>
+				
 			</ul> --}}
+
+			<ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+        <div class="main-search open">
+            <form action="{{ route('search') }}" method="GET" class="input-group">
+                <input type="text" name="q" id="m-search" class="form-control" placeholder="Search . . ." value="{{ request('q') }}">
+                <a href="#!" class="input-group-append search-close" id="search-close">
+                    <i class="feather icon-x input-group-text"></i>
+                </a>
+                <button type="submit" class="input-group-append search-btn btn btn-primary border-0">
+                    <i class="feather icon-search input-group-text"></i>
+                </button>
+            </form>
+        </div>
+    </li>
+</ul>
 			<ul class="navbar-nav ml-auto">
 				<li>
 					<div class="dropdown">

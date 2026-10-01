@@ -2,9 +2,18 @@
 
 @section('content')
     <div class="container mt-4">
-        <h1>Data Style</h1>
+        <h1>Data Style</h1> 
    
-        <a class="btn btn-primary" href="{{ route('style.create') }}">+ Tambah Style</a>
+         <a class="btn btn-primary" href="{{ route('style.create') }}">+ Tambah Style</a>
+        
+         {{-- <div class="row mb-0">
+        <div class="col">
+        <h5 class="mt-3">Data Style</h5>
+        </div>
+        <div class="col-auto text-end">
+        <a class="btn btn-primary" href="{{ route('style.create') }}">+ Tambah S</a>
+        </div> --}}
+        
 
         <table class="table table-striped table-bordered mt-2">
             <tr>
